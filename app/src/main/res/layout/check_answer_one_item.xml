@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="1."/>
+
+        <TextView
+            android:id="@+id/expression"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="@dimen/expression_size"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="="/>
+
+        <EditText
+            android:id="@+id/input_result"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.3"
+            android:focusable="false"
+            android:gravity="center"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/right_or_wrong"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/choose_result_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/num1_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="111"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/num2_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="222"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/num3_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="333"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/num4_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="444"
+            android:textSize="@dimen/checkbox_content"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/right_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:gravity="right"
+        android:text="若回答错误，正确的答案："
+        android:textColor="#ff0000"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/light_gray"/>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">算一算</string>
+    <string name="game_rule">通过四则运算法则来训练对基本数字的反应能力。\n主要有如下几种模式\n&#160;&#160;&#160;&#160;模式一：填写运算结果；\n&#160;&#160;&#160;&#160;模式二：选择运算结果；\n&#160;&#160;&#160;&#160;模式三：四则混合运算；\n&#160;&#160;&#160;&#160;模式四：选择运算符号。</string>
+    <string name="model_one">模式一</string>
+    <string name="model_two">模式二</string>
+    <string name="model_three">模式三</string>
+    <string name="model_four">模式四</string>
+    <string name="model_one_tip1">请选择挑战组合。</string>
+    <string name="model_tip2">提示：\n&#160;&#160;&#160;&#160;&#160;&#160;1.都是两个数的运算；\n&#160;&#160;&#160;&#160;&#160;&#160;2.「范围-10」表示数字在10以内，依次类推。</string>
+    <string name="model_tip3">提示：\n&#160;&#160;&#160;&#160;&#160;&#160;1.「类型-两种」表示在加、减、乘、除运算符中随机组合两种运算符，可重复出现；\n&#160;&#160;&#160;&#160;&#160;&#160;2.「范围-10」表示数字在10以内，依次类推。</string>
+    <string name="model_tip4">提示：\n&#160;&#160;&#160;&#160;&#160;&#160;1.利用“+”、“-”、“*”、“/”以及左右括号“(”、“)”使等式成立；\n&#160;&#160;&#160;&#160;&#160;&#160;2.「初级」三个相同的数；\n&#160;&#160;&#160;&#160;&#160;&#160;3.「中级」四个相同的数；\n&#160;&#160;&#160;&#160;&#160;&#160;4.「高级」五个相同的数。</string>
+    <string name="operate_type">类型：</string>
+    <string name="range">范围：</string>
+    <string name="total">题量：</string>
+    <string name="start_answer">开始答题</string>
+    <string name="re_choose_model">重选模式</string>
+    <string name="submit">提交</string>
+    <string name="total_num">总共：</string>
+    <string name="get_score">得分：</string>
+    <string name="used_time">耗时：</string>
+    <string name="result_analyse">结果分析：</string>
+    <string name="right_rate">正确率：</string>
+    <string name="per_used_time">平均耗时：</string>
+    <string name="do_it_again">再来一次</string>
+    <string name="exit">离开</string>
+    <string name="operate_two">两种</string>
+    <string name="operate_three">三种</string>
+    <string name="operate_four">四种</string>
+    <string name="operate_random">随机</string>
+</resources>

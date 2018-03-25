@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50px"
+        android:gravity="left"
+        android:text="@string/model_one_tip1"/>
+
+    <TextView
+        android:id="@+id/model_tip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/model_tip2"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/model_tip3"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/model_tip3"
+        android:textSize="12sp"/>
+
+    <RadioGroup
+        android:id="@+id/type_radio_group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/operate_type"/>
+
+        <RadioButton
+            android:id="@+id/operate_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1.2"
+            android:checked="true"
+            android:text="@string/operate_two"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/operate_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/operate_three"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/operate_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/operate_four"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/operate_random"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/operate_random"
+            android:textSize="@dimen/checkbox_content"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/type_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/operate_type"/>
+
+        <RadioButton
+            android:id="@+id/type_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1.2"
+            android:checked="true"
+            android:text="+"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/type_sub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="-"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/type_mul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="*"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/type_div"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="÷"
+            android:textSize="@dimen/checkbox_content"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/total_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/total"/>
+
+        <RadioButton
+            android:id="@+id/total_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1.2"
+            android:checked="true"
+            android:text="10"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/total_20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="20"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/total_30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="30"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/total_50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="50"
+            android:textSize="@dimen/checkbox_content"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/range_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/range"/>
+
+        <RadioButton
+            android:id="@+id/range_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1.2"
+            android:checked="true"
+            android:text="10"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/range_100"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="100"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/range_1000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="1000"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/range_10000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="10000"
+            android:textSize="@dimen/checkbox_content"/>
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/start_answer_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/start_answer"/>
+
+    <Button
+        android:id="@+id/go_back_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/re_choose_model"/>
+
+</LinearLayout>

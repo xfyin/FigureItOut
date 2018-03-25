@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left_total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="还剩x题"/>
+
+        <TextView
+            android:id="@+id/go_to_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="3s后进入下一题"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/four_mixed_model_four"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"/>
+
+    <Button
+        android:id="@+id/check_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看答案"/>
+
+
+</LinearLayout>

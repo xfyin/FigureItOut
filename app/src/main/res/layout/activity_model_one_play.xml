@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left_total_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="还剩x题"/>
+
+        <TextView
+            android:id="@+id/go_to_next_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="3s后进入下一题"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <TextView
+            android:id="@+id/expression"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:textSize="@dimen/expression_size"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="="/>
+
+        <EditText
+            android:id="@+id/input_result_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10px"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLength="10"
+            android:textSize="@dimen/expression_size"
+            android:theme="@style/MyEditText"/>
+
+        <TextView
+            android:id="@+id/right_or_wrong_one"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="100px"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/right_result_one"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="90dp"
+        android:gravity="right"
+        android:text="正确结果："
+        android:textColor="#ff0000"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/submit_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"/>
+
+</LinearLayout>

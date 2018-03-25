@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="right"
+        android:text="请选择挑战级别"/>
+
+    <TextView
+        android:id="@+id/model_tip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/model_tip4"
+        android:textSize="12sp"/>
+
+    <RadioGroup
+        android:id="@+id/type_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="难度："/>
+
+        <RadioButton
+            android:id="@+id/operate_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="初级"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/operate_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="中级"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/operate_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="高级"
+            android:textSize="@dimen/checkbox_content"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/total_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="题量："/>
+
+        <RadioButton
+            android:id="@+id/total_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="5"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/total_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="@dimen/checkbox_content"/>
+
+        <RadioButton
+            android:id="@+id/total_20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="20"
+            android:textSize="@dimen/checkbox_content"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/start_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/start_answer"/>
+
+    <Button
+        android:id="@+id/go_back_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/re_choose_model"/>
+
+</LinearLayout>
